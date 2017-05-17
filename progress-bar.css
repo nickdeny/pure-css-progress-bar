@@ -1,0 +1,78 @@
+/* DONT NEEDED */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 50em;
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+  .content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+a,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  color: #fff;
+  background-color: #eb2019;
+  padding: .5em 0;
+}
+  .author {
+    color: #e7e7e7;
+    margin-left: 1em;
+    padding-bottom: 3px;
+    border-bottom: 2px dashed #d7d7d7;
+  }
+
+/* UI-PROGRESSBAR */
+.progress-bar {
+  display: inline-block;
+  text-align: left;
+  height: 1.2em;
+  width: 14em;
+  padding: 1px;
+  background-color: #fff;
+  border: 2px solid #eb2019;
+  border-radius: 2px;
+}
+  .progress-bar span {
+    display: inline-block;
+    height: 100%;
+    background-color: #eb2019;
+    transition: width .1s ease-in-out; 
+  }
+  
+.pb-round {
+  border-radius: 15px;
+}
+  .pb-round span {
+    min-width: 20px;
+    border-radius: 15px;
+  }
+  
+.pb-lines span {
+  background-size: 2em 2em;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                      transparent 75%, transparent);            
+  
+  animation: animate-lines 3s linear infinite;             
+}
+
+@keyframes animate-lines {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
