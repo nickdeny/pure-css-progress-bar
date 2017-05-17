@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PURE CSS PROGRESS BAR //nickdeny</title>
+    <link href="progress-bar.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h2>
+          PURE CSS PROGRESS BAR
+          <a href="https://github.com/nickdeny" target="_blank" class="author">
+            by //nickdeny
+          </a>
+        </h2>
+        
+        <div class="progress-bar pb-round pb-lines">
+          <span></span>
+        </div>
+        
+        <br>
+        
+        <div class="progress-bar pb-round">
+          <span style="width:75%"></span>
+        </div>
+        
+        <br>
+        
+        <div class="progress-bar pb-lines">
+          <span style="width:33%"></span>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Example animation -->
+    <script type="text/javascript">
+    
+    var i = 0,
+    
+      interval = setInterval(function(){
+      i++;
+      document.getElementsByTagName('span')[0].style.width = i+'%';
+      if(i == 100) {
+        clearInterval(interval);
+      }
+    }, 50);
+    
+    </script>
+  </body>
+</html>
